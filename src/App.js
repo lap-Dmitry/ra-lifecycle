@@ -1,24 +1,19 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import WatchesWidget from './Components/Watches/WatchesWidget';
+import NotesPanelClass from './Components/Crud/NotesPanelClass';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className='title'>Мировые часы</div>
+      <WatchesWidget />
+
+      <div className="title">CRUD</div>
+      <div className='container'>
+        <NotesPanelClass />
+      </div>
+    </>
   );
 }
 

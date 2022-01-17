@@ -1,38 +1,140 @@
-.App {
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+.title {
+  font-size: 4em;
+  font-weight: bold;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* Watches of Styles */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.clock_form {
+  width: 600px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.clocks_box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.clock_box {
+  padding-right: 40px;
+}
+.clock_widget__box {
+  margin-bottom: 50px;
+}
+.clock_box:last-child {
+  padding-right: 0px;
+}
+.del_btn {
+  position: relative;
+  bottom: 20px;
+  right: -10px;
+  cursor: pointer;
+}
+.del_btn:hover {
+  color: #ffcc00;
+}
+.watches_btn {
+  width: 100px;
+  height: 23px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.watches_btn:hover {
+  background-color: #000000;
+  color: #ffffff;
 }
 
-.App-link {
-  color: #61dafb;
-}
+/* Note of styles */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.notes_panel__wrapper {
+  display: flex;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.notes_panel__text h1 {
+  font-weight: 500;
+}
+.panel_button__refresh {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin-top: 25px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.button-refresh {
+  color: #32cd32;
+}
+.notes_body {
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+.note_button__remove {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #ff0000;
+  cursor: pointer;
+}
+.button-remove {
+  position: relative;
+  bottom: 75px;
+  left: 135px;
+}
+.note_text {
+  width: 250px;
+}
+.note_wrapper {
+  width: 280px;
+  margin-right: 36px;
+  text-align: center;
+  border: 1px solid #000000;
+}
+.note_wrapper:nth-child(2n + 2) {
+  margin-right: 0px;
+}
+.note_wrapper:nth-child(n + 3) {
+  margin-top: 36px;
+}
+.add_note__form {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.label h2 {
+  font-size: 18px;
+  font-weight: lighter;
+  margin-top: 50px;
+}
+.input {
+  width: 350px;
+  padding: 10px 15px 120px;
+}
+.input_note {
+  text-align: start;
+}
+.form_button__submit {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: relative;
+  top: 110px;
+  right: 45px;
+  cursor: pointer;
 }
